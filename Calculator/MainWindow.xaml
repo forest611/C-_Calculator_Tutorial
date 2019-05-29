@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="511" Width="408">
+    <Grid Height="480" VerticalAlignment="Top" HorizontalAlignment="Left" Width="400">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="255*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="calcsText" HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="25" TextAlignment="Right" Height="97" Width="355" Grid.ColumnSpan="2"/>
+        <Button Content="0" HorizontalAlignment="Left" FontSize="20" Margin="22,402,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="1" HorizontalAlignment="Left" FontSize="20" Margin="22,345,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="2" HorizontalAlignment="Left" FontSize="20" Margin="91,345,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="3" HorizontalAlignment="Left" FontSize="20" Margin="160,345,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="4" HorizontalAlignment="Left" FontSize="20" Margin="22,288,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="5" HorizontalAlignment="Left" FontSize="20" Margin="91,288,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="6" HorizontalAlignment="Left" FontSize="20" Margin="160,288,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="7" HorizontalAlignment="Left" FontSize="20" Margin="22,231,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="8" HorizontalAlignment="Left" FontSize="20" Margin="91,231,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button Content="9" HorizontalAlignment="Left" FontSize="20" Margin="160,231,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickNumbers"/>
+        <Button x:Name="plusminus" Content="±" HorizontalAlignment="Left" FontSize="20" Margin="91,402,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickFunctions"/>
+        <Button x:Name="equal" Content="=" HorizontalAlignment="Left" FontSize="20" Margin="160,402,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickFunctions"/>
+        <Button x:Name="plus" Content="+" FontSize="20" Margin="0,345,97,21" Grid.ColumnSpan="2" Click="clickFunctions" HorizontalAlignment="Right" Width="69"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" FontSize="20" Margin="234,231,0,0" VerticalAlignment="Top" Width="69" Height="114" Grid.ColumnSpan="2" Click="clickFunctions"/>
+        <Button x:Name="divided" Content="÷" HorizontalAlignment="Left" FontSize="20" Margin="48,345,0,0" VerticalAlignment="Top" Width="69" Height="114" Grid.Column="1" Click="clickFunctions"/>
+        <Button x:Name="times" Content="x" HorizontalAlignment="Left" FontSize="20" Margin="48,231,0,0" VerticalAlignment="Top" Width="69" Height="114" Grid.Column="1" Click="clickFunctions"/>
+        <Button x:Name="clear" Content="C" HorizontalAlignment="Left" FontSize="20" Margin="48,112,0,0" VerticalAlignment="Top" Width="69" Height="114" Grid.Column="1" Click="clickFunctions"/>
+        <Button x:Name="clearEntry" Content="CE" HorizontalAlignment="Left" FontSize="20" Margin="234,112,0,0" VerticalAlignment="Top" Width="69" Height="114" Grid.ColumnSpan="2" Click="clickFunctions"/>
+        <Button x:Name="perPlus" Content="%+" HorizontalAlignment="Left" FontSize="20" Margin="160,112,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickFunctions"/>
+        <Button x:Name="perMinus" Content="%-" HorizontalAlignment="Left" FontSize="20" Margin="160,169,0,0" VerticalAlignment="Top" Width="69" Height="57" Click="clickFunctions"/>
+        <TextBlock x:Name="valueText" HorizontalAlignment="Left" Margin="22,112,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="25" TextAlignment="Right" Height="38" Width="133"/>
+        <TextBlock x:Name="resultText" HorizontalAlignment="Left" Margin="22,155,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="25" TextAlignment="Right" Height="38" Width="133" RenderTransformOrigin="0.504,1.553"/>
+
+
+
     </Grid>
 </Window>
